@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="cal.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <input type="text" name="screen" value="" id="screen" />
+
+      <div class="keys">
+        <button
+          type="button"
+          id="plus"
+          value="+"
+          onclick="showValue(document.getElementById('plus').value)"
+        >
+          +
+        </button>
+
+        <button
+          type="button"
+          id="minus"
+          value="-"
+          onclick="showValue(document.getElementById('minus').value)"
+        >
+          -
+        </button>
+        <button
+          type="button"
+          id="multiply"
+          value="*"
+          onclick="showValue(document.getElementById('multiply').value)"
+        >
+          *
+        </button>
+        <button
+          type="button"
+          id="devide"
+          value="/"
+          onclick="showValue(document.getElementById('devide').value)"
+        >
+          /
+        </button>
+
+        <button
+          type="button"
+          id="seven"
+          value="7"
+          onclick="showValue(document.getElementById('seven').value)"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          id="eight"
+          value="8"
+          onclick="showValue(document.getElementById('eight').value)"
+        >
+          8
+        </button>
+        <button
+          type="button"
+          id="nine"
+          value="9"
+          onclick="showValue(document.getElementById('nine').value)"
+        >
+          9
+        </button>
+
+        <button
+          type="button"
+          id="four"
+          value="4"
+          onclick="showValue(document.getElementById('four').value)"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          id="five"
+          value="5"
+          onclick="showValue(document.getElementById('five').value)"
+        >
+          5
+        </button>
+        <button
+          type="button"
+          id="six"
+          value="6"
+          onclick="showValue(document.getElementById('six').value)"
+        >
+          6
+        </button>
+
+        <button
+          type="button"
+          id="one"
+          value="1"
+          onclick="showValue(document.getElementById('one').value)"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          id="two"
+          value="2"
+          onclick="showValue(document.getElementById('two').value)"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          id="three"
+          value="3"
+          onclick="showValue(document.getElementById('three').value)"
+        >
+          3
+        </button>
+
+        <button
+          type="button"
+          id="zero"
+          value="0"
+          onclick="showValue(document.getElementById('zero').value)"
+        >
+          0
+        </button>
+
+        <button
+          type="button"
+          id="dot"
+          value="."
+          onclick="showValue(document.getElementById('dot').value)"
+        >
+          .
+        </button>
+        <button
+          type="button"
+          id="clear"
+          value=""
+          onclick="clearValue(document.getElementById('clear').value)"
+        >
+          AC
+        </button>
+
+        <button type="button" id="equal" value="=" onclick="calculate();">
+          =
+        </button>
+
+        <button
+          type="button"
+          id="toggle"
+          value="+/-"
+          onclick="toggle(document.getElementById('toggle').value);"
+        >
+          +/-
+        </button>
+      </div>
+    </div>
+    <script src="cal.js"></script>
+  </body>
+</html>
