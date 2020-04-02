@@ -14,18 +14,18 @@ let calculate = function() {
 
 document.getElementById("equal").addEventListener("click", calculate);
 
-let toggle = function() {
+let valueToggle = function() {
   let num = document.getElementById("screen").value;
   if (num > 0) {
     num = -Math.abs(num);
     document.getElementById("screen").value = num;
   }
-  /*else if (num < 0) {
+  else if (num < 0) {
     num = Math.abs(num);
 
     document.getElementById("screen").value = num;
 }
-  return 0; */
+  return 0; 
 };
 
-document.getElementById("toggle").addEventListener("click", toggle);
+document.getElementById("toggle").addEventListener("click", valueToggle);
